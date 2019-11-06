@@ -1,0 +1,176 @@
+.content {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.sectioncontent1 {
+    clear: none;
+    float: left;
+    width: 500px
+}
+
+.sectioncontent2 {
+    clear: none;
+    float: right;
+    width: 500px;
+}
+
+.sectioncontent3 {
+    clear: none;
+    float: left;
+    width: 500px;
+}
+
+.sectioncontact {
+    clear: none;
+    float: left;
+    width: 500px;
+}
+
+.sectionenter {
+    clear: none;
+    float: left;
+    width: 900px;
+    font-size: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'auto auto';
+    grid-gap: 20px;
+    padding: 10px
+}
+
+.boxcontent {
+    border: 1px solid #D72402;
+    box-shadow: rgba(215, 36, 2, .7) 0 0.1em 0.5em;
+    background: rgba(0, 0, 0, 0.10);
+    color: #ffffff;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    overflow: auto;
+}
+
+.sidemenu {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* The navigation menu links */
+
+.sidemenu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidemenu a:hover {
+    color: #f1f1f1;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidemenu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#sidenav {
+    width: 150px;
+}
+
+
+/*Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+
+/*On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size)*/
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.image {
+    text-align: justify;
+}
+
+.image img {
+    display: block;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.column p {
+    text-align: center;
+}
+
+
+/* Clearfix (clear floats) */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 500px) {
+    .sectioncontent1 {
+        width: 100%;
+        display: block;
+    }
+    .sectioncontent2 {
+        width: 100%;
+        display: block;
+    }
+    .sectioncontent3 {
+        width: 100%;
+        display: block;
+    }
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}

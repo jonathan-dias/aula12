@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <div id="sidenav" class="sidemenu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="contato.html">Contato</a>
+        <a href="entrar.html">Entrar</a>
+        <a href="inscrever.html">Inscrever</a>
+    </div>
+    </nav>
+    <span style="font-size:30px;cursor:pointer;color: white;" onclick="openNav()">&#9776; </span>
+
+    <script>
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+        function openNav() {
+            document.getElementById("sidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+</head>
+
+<body>
+    <nav style="background: #471414;
+		border: 1px solid rgb(223, 42, 6);
+		color: #FFFFFF; height: 60px; box-shadow: rgba(215, 36, 2, .7) 0 0.1em 0.5em; margin-left: 150px;" class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <a class="navbar-brand">
+            <img src="image/logo.png" style="width: 50px">
+        </a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">História</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Trailer</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="content">
+
+
+        <img style="display: block; margin: auto" src="image/BackgroundDK.png">
+
+        <div class="sectioncontact">
+            <div class="boxcontent">
+                <div style="background:#290404; border:1px solid #D72402; color:#FFFFFF; font-size:150%; margin-bottom:5px; padding: 1px; text-align:center;">Contato</div>
+                <form>
+                    <label for="nome">Nome</label><br>
+                    <input type="text" name="nome" id="nome"><br>
+                    <label for="email">Email</label><br>
+                    <input type="text" name="email" id="email"><br>
+                    <label for="mensagem" name="mensagem" id="mensagem">Mensagem:</label><br>
+                    <textarea>Digite sua opinião</textarea><br>
+
+                    <button type="submit" style="margin-top: 25px">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+
+</footer>
+
+</html>
